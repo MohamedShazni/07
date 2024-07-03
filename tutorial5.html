@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial 5</title>
+<style>
+    body{
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+    h1{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .correct{
+        color: rgb(96, 223, 6);
+        font-weight: bold;
+    }
+    .incorrect{
+        color: red;
+        font-weight: bold;
+    }
+    button{
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background-color: rgb(46, 109, 225);
+        color: white;
+        font-weight: bolder;
+    }
+    input{
+        border-radius: 5px;
+        outline: none;
+        padding: 6px 18px;
+    }
+    .allquestions{
+        background-color: lightgray;
+        font-weight: 800;
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .question{
+        border: 1px solid;
+        padding: 2px 14px;
+    }
+    strong{
+        color: blue;
+        font-size: 20px;
+    }
+</style>    
+</head>    
+<body>
+    <h1>A Simple Maths Game</h1>
+  <div class="allquestions"> 
+    <p>
+        <strong>Question 1</strong>:
+        <span class="question" id="question1"></span>
+        <span id="answer1">
+            <input type="number" id="getanswer1">
+            <button id="submitanswer1">Ok</button>
+        </span>
+        <span id="feedback1"></span>
+    </p>
+    
+    <p>
+        <strong>Question 2</strong>:
+        <span class="question" id="question2"></span>
+        <span id="answer2">
+            <input type="number" id="getanswer2">
+            <button id="submitanswer2">Ok</button>
+        </span>
+        <span id="feedback2"></span>
+    </p>
+
+    <p>
+        <strong>Question 3</strong>:
+        <span class="question" id="question3"></span>
+        <span id="answer3">
+            <input type="number" id="getanswer3">
+            <button id="submitanswer3">Ok</button>
+        </span>
+        <span id="feedback3"></span>
+    </p>
+
+    <p>
+        <strong>Question 4</strong>:
+        <span class="question" id="question4"></span>
+        <span id="answer4">
+            <input type="number" id="getanswer4">
+            <button id="submitanswer4">Ok</button>
+        </span>
+        <span id="feedback4"></span>
+    </p>
+
+    <p>
+        <strong>Question 5</strong>:
+        <span class="question" id="question5"></span>
+        <span id="answer5">
+            <input type="number" id="getanswer5">
+            <button id="submitanswer5">Ok</button>
+        </span>
+        <span id="feedback5"></span>
+    </p>
+
+    <p>
+        <strong>Question 6</strong>:
+        <span class="question" id="question6"></span>
+        <span id="answer6">
+            <input type="number" id="getanswer6">
+            <button id="submitanswer6">Ok</button>
+        </span>
+        <span id="feedback6"></span>
+    </p>
+
+    <p>
+        <strong>Question 7</strong>:
+        <span class="question" id="question7"></span>
+        <span id="answer7">
+            <input type="number" id="getanswer7"> 
+            <button id="submitanswer7">Ok</button>
+        </span>
+        <span id="feedback7"></span>
+    </p>
+
+    <p>
+        <strong>Question 8</strong>:
+        <span class="question" id="question8"></span>
+        <span id="answer8">
+            <input type="number" id="getanswer8">
+            <button id="submitanswer8">Ok</button>
+        </span>
+        <span id="feedback8"></span>
+    </p>
+
+    <p>
+        <strong>Question 9</strong>:
+        <span class="question" id="question9"></span>
+        <span id="answer9">
+            <input type="number" id="getanswer9">
+            <button id="submitanswer9">Ok</button>
+        </span>
+        <span id="feedback9"></span>
+    </p>
+
+    <p>
+        <strong>Question 10</strong>:
+        <span class="question" id="question10"></span>
+        <span id="answer10">
+            <input type="number" id="getanswer10">
+            <button id="submitanswer10">Ok</button>
+        </span>
+        <span id="feedback10"></span>
+    </p>
+    <p>
+        <strong>Your Score is:</strong>
+        <span id="score"></span>
+    </p>
+  </div>
+  <script>
+      document.getElementById("question1").innerHTML="8 + 8  =  ";
+      document.getElementById("question2").innerHTML="8 - 5  =  ";
+      document.getElementById("question3").innerHTML="4 * 2  =  ";
+      document.getElementById("question4").innerHTML="10 / 5 =  ";
+      document.getElementById("question5").innerHTML="10 + 10 = ";
+      document.getElementById("question6").innerHTML="2 * 10 = ";
+      document.getElementById("question7").innerHTML="2 / 2 =  ";
+      document.getElementById("question8").innerHTML="7 + 7 =  ";
+      document.getElementById("question9").innerHTML="15 - 7 = ";
+      document.getElementById("question10").innerHTML="8 - 7 = ";
+      
+      const answerFor1 = 16;
+      const answerFor2 = 3;
+      const answerFor3 = 8;
+      const answerFor4 = 2;
+      const answerFor5 = 20;
+      const answerFor6 = 20;
+      const answerFor7 = 1;
+      const answerFor8 = 14;
+      const answerFor9 = 8;
+      const answerFor10 = 1;
+      
+      var score = 0;
+      
+      function updateScore() {
+          document.getElementById("score").innerHTML = (score * 10);
+      }
+
+      document.getElementById('submitanswer1').addEventListener('click', function() {
+        const useranswer = document.getElementById('getanswer1').value;
+      
+        if (useranswer == answerFor1){
+          document.getElementById("feedback1").classList.add("correct");
+          document.getElementById("feedback1").innerHTML="&checkmark; Correct answer";
+          score += 1;
+        } else{
+          document.getElementById("feedback1").classList.add("incorrect");
+          document.getElementById("feedback1").innerHTML="&cross; The correct answer is 16";
+        }
+        updateScore();
+      })
+      
+      document.getElementById('submitanswer2').addEventListener('click', function() {
+        const useranswer = document.getElementById('getanswer2').value;
+      
+        if (useranswer == answerFor2){
+          document.getElementById("feedback2").classList.add("correct");
+          document.getElementById("feedback2").innerHTML="&checkmark; Correct answer";
+          score += 1;
+        } else{
+          document.getElementById("feedback2").classList.add("incorrect");
+          document.getElementById("feedback2").innerHTML="&cross; The correct answer is 3";
+        }
+        updateScore();
+      })
+
+      document.getElementById('submitanswer3').addEventListener('click', function() {
+        const useranswer = document.getElementById('getanswer3').value;
+      
+        if (useranswer == answerFor3){
+          document.getElementById("feedback3").classList.add("correct");
+          document.getElementById("feedback3").innerHTML="&checkmark; Correct answer";
+          score += 1;
+        } else{
+          document.getElementById("feedback3").classList.add("incorrect");
+          document.getElementById("feedback3").innerHTML="&cross; The correct answer is 8";
+        }
+        updateScore();
+      })
+
+      document.getElementById('submitanswer4').addEventListener('click', function() {
+        const useranswer = document.getElementById('getanswer4').value;
+      
+        if (useranswer == answerFor4){
+          document.getElementById("feedback4").classList.add("correct");
+          document.getElementById("feedback4").innerHTML="&checkmark; Correct answer";
+          score += 1;
+        } else{
+          document.getElementById("feedback4").classList.add("incorrect");
+          document.getElementById("feedback4").innerHTML="&cross; The correct answer is 2";
+        }
+        updateScore();
+      })
+      
+      document.getElementById('submitanswer5').addEventListener('click', function() {
+        const useranswer = document.getElementById('getanswer5').value;
+      
+        if (useranswer == answerFor5){
+          document.getElementById("feedback5").classList.add("correct");
+          document.getElementById("feedback5").innerHTML="&checkmark; Correct answer";
+          score += 1;
+        } else{
+          document.getElementById("feedback5").classList.add("incorrect");
+          document.getElementById("feedback5").innerHTML="&cross; The correct answer is 20";
+        }
+        updateScore();
+      })
+
+      document.getElementById('submitanswer6').addEventListener('click', function() {
+        const useranswer = document.getElementById('getanswer6').value;
+      
+        if (useranswer == answerFor6){
+          document.getElementById("feedback6").classList.add("correct");
+          document.getElementById("feedback6").innerHTML="&checkmark; Correct answer";
+          score += 1;
+        } else{
+          document.getElementById("feedback6").classList.add("incorrect");
+          document.getElementById("feedback6").innerHTML="&cross; The correct answer is 20";
+        }
+        updateScore();
+      })
+
+      document.getElementById('submitanswer7').addEventListener('click', function() {
+        const useranswer = document.getElementById('getanswer7').value;
+      
+        if (useranswer == answerFor7){
+          document.getElementById("feedback7").classList.add("correct");
+          document.getElementById("feedback7").innerHTML="&checkmark; Correct answer";
+          score += 1;
+        } else{
+          document.getElementById("feedback7").classList.add("incorrect");
+          document.getElementById("feedback7").innerHTML="&cross; The correct answer is 1";
+        }
+        updateScore();
+      })
+
+      document.getElementById('submitanswer8').addEventListener('click', function() {
+        const useranswer = document.getElementById('getanswer8').value;
+      
+        if (useranswer == answerFor8){
+          document.getElementById("feedback8").classList.add("correct");
+          document.getElementById("feedback8").innerHTML="&checkmark; Correct answer";
+          score += 1;
+        } else{
+          document.getElementById("feedback8").classList.add("incorrect");
+          document.getElementById("feedback8").innerHTML="&cross; The correct answer is 14";
+        }
+        updateScore();
+      })
+
+      document.getElementById('submitanswer9').addEventListener('click', function() {
+        const useranswer = document.getElementById('getanswer9').value;
+      
+        if (useranswer == answerFor9){
+          document.getElementById("feedback9").classList.add("correct");
+          document.getElementById("feedback9").innerHTML="&checkmark; Correct answer";
+          score += 1;
+        } else{
+          document.getElementById("feedback9").classList.add("incorrect");
+          document.getElementById("feedback9").innerHTML="&cross; The correct answer is 8";
+        }
+        updateScore();
+      })
+
+      document.getElementById('submitanswer10').addEventListener('click', function() {
+        const useranswer = document.getElementById('getanswer10').value;
+      
+        if (useranswer == answerFor10){
+          document.getElementById("feedback10").classList.add("correct");
+          document.getElementById("feedback10").innerHTML="&checkmark; Correct answer";
+          score += 1;
+        } else{
+          document.getElementById("feedback10").classList.add("incorrect");
+          document.getElementById("feedback10").innerHTML="&cross; The correct answer is 1";
+        }
+        updateScore();
+      })
+      
+  </script>
+</body>
+</html>
