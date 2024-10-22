@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Website with Tailwind CSS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="top flex justify-between items-center px-20 py-6 bg-[#6B3CC9]">
+        <div>
+            <img src="Images/Logo.png" alt="Logo">
+        </div>
+        <div>
+            <ul class="flex list-none m-0 p-0">
+                <li class="ml-5"><a href="#" class="text-white no-underline">SERVICES</a></li>
+                <li class="ml-5"><a href="#" class="text-white no-underline">ABOUT US</a></li>
+                <li class="ml-5"><a href="#" class="text-white no-underline">CONTACT US</a></li>
+                <li class="ml-5"><a href="#" class="text-white no-underline">CAREERS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero relative w-full">
+        <div class="hero-content relative w-full">
+            <img src="Images/Hero Image.png" alt="Hero Image" class="w-full h-auto block">
+            <div class="hero-text absolute top-[72%] left-[25%] transform -translate-x-1/2 -translate-y-1/2 text-white bg-gradient-to-r from-[#1CBDDD] to-[#4DCA79] p-5 w-[500px]">
+                <p class="font-inter font-bold text-[48px] leading-none tracking-tight capitalize">We crush your competitors, goals, and sales records - without the B.S.</p>
+                <button class="mt-4 bg-[#F28D35] text-white px-5 py-3 w-[214px]">GET FREE CONSULTATION</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section One -->
+    <div class="one flex items-center justify-start mt-5">
+        <img src="Images/image 2.png" class="w-[346px] h-[346px] ml-[300px]" alt="image 2">
+        <div class="one-text ml-10">
+            <h2 class="text-[27px] font-poppins font-semibold text-[#6B3CC9]">Web & Mobile App Development</h2>
+            <p class="text-[16px] w-[530px] font-inter text-black mt-4">Your web and mobile Apps are spieces of the puzzle to grow your business. We use frameworks which
+                tailor content and engagement methods to respond to different intents shown by your potential
+                customers who interact with your business online.</p>
+            <button class="mt-4 bg-[#F28D35] text-white px-5 py-3">LEARN MORE</button>
+        </div>
+    </div>
+
+    <!-- Section Two -->
+    <div class="two flex items-center justify-start mt-5">
+        <div class="two-text ml-[300px]">
+            <h2 class="text-[27px] font-poppins font-semibold text-[#6B3CC9]">Digital Strategy Consulting</h2>
+            <p class="text-[16px] w-[530px] font-inter text-black mt-4">Your digital strategy should complement the overall marketing strategy of the company. In online
+                marketing, each component will never work in isolation and every business needs a different mix. We
+                provide a clear concept and strategic overview to find the most efficient model for your business</p>
+            <button class="mt-4 bg-[#F28D35] text-white px-5 py-3">LEARN MORE</button>
+        </div>
+        <img src="Images/image 1.png" class="w-[346px] h-[346px] ml-10" alt="image 1">
+    </div>
+
+    <!-- Frequently Asked Questions -->
+    <div class="question text-center mt-10">
+        <h2 class="text-[#6B3CC9] font-poppins font-semibold text-[27px]">Frequently Asked Question</h2>
+    </div>
+
+    <div class="lorem mt-5 w-[794px] mx-auto bg-[#FAF8FF] p-5 cursor-pointer">
+        <p class="text-black text-[22px] font-medium">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?
+            <span id="toggleIcon" class="ml-5 cursor-pointer font-bold" onclick="toggleLorem()">+</span>
+        </p>
+    </div>
+
+    <div id="hiddenText" class="hidden-text hidden">
+        <p class="w-[800px] h-[60px] ml-[380px] text-[#6F6C90] text-[18px] font-inter leading-[30px]">Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus
+            odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</p>
+    </div>
+
+    <div class="lorem1 mt-5 w-[794px] mx-auto bg-[#FAF8FF] p-5 cursor-pointer">
+        <p class="text-black text-[22px] font-medium">Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?
+            <span id="toggleIcon1" class="ml-5 cursor-pointer font-bold" onclick="toggleLorem1()">+</span>
+        </p>
+    </div>
+
+    <div id="hiddenText1" class="hidden-text hidden">
+        <p class="w-[800px] h-[60px] ml-[380px] text-[#6F6C90] text-[18px] font-inter leading-[30px]">Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus
+            odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</p>
+    </div>
+
+    <div class="lorem2 mt-5 w-[794px] mx-auto bg-[#FAF8FF] p-5 cursor-pointer">
+        <p class="text-black text-[22px] font-medium">Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?
+            <span id="toggleIcon2" class="ml-5 cursor-pointer font-bold" onclick="toggleLorem2()">+</span>
+        </p>
+    </div>
+
+    <div id="hiddenText2" class="hidden-text hidden">
+        <p class="w-[800px] h-[60px] ml-[380px] text-[#6F6C90] text-[18px] font-inter leading-[30px]">Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus
+            odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer bg-[#6B3CC9] w-full h-[266px] mt-10 p-10">
+        <div class="flex">
+            <div>
+                <img src="Images/Logo.png" alt="Logo">
+                <p class="text-white mt-4 w-[400px] text-[16px] font-lato leading-[19.2px]">Your goal is our target. We use online marketing platforms and tools to achieve a single objective - your business results.</p>
+            </div>
+            <div class="tech ml-32">
+                <h2 class="text-white font-semibold text-[21px]">Our Technologies</h2>
+                <ul class="list-none mt-4">
+                    <li class="text-white">ReactJs</li>
+                    <li class="text-white">Gatsby</li>
+                    <li class="text-white">NextJs</li>
+                    <li class="text-white">NodeJs</li>
+                </ul>
+            </div>
+            <div class="serv ml-32">
+                <h2 class="text-white font-semibold text-[21px]">Our Services</h2>
+                <ul class="list-none mt-4">
+                    <li class="text-white">Social Media Marketing</li>
+                    <li class="text-white">Web & Mobile App Development</li>
+                    <li class="text-white">Data & Analytics</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="mt-5 w-[630px] border-t border-white ml-[320px]">
+        <div class="pri-term text-center  mt-5">
+            <p class="text-white">Privacy Policy <span class="mx-2">|</span> Terms & Conditions</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Toggle -->
+    <script src="web.js"></script>
+</body>
+
+</html>
