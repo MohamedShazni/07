@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="web.css">
+</head>
+
+<body>
+    <div class="top">
+        <div>
+            <img src="Logo.png" alt="Logo">
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">CAREERS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <img src="Hero Image.png" alt="Hero Image">
+            <div class="hero-text">
+                <p>We crush your competitors, goals, and sales records - without the B.S.</p>
+                <button>GET FREE CONSULATION</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="one">
+        <div class="one-content">
+            <img src="image 2.png" alt="image 2">
+            <div class="one-text">
+                <h2>Web & Mobile App Development</h2>
+                <p>Your web and mobile Apps are spieces of the puzzle to grow your business. We use frameworks which
+                    tailor content and engagement methods to respond to different intents shown by your potential
+                    customers who interact with your business online.</p>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="two">
+        <div class="two-content">
+            <div class="two-text">
+                <h2>Digital Strategy Consulting</h2>
+                <p>Your digital strategy should complement the overall marketing strategy of the company. In online
+                    marketing, each component will never work in isolation and every business needs a different mix. We
+                    provide a clear concept and strategic overview to find the most efficient model for your business
+                </p>
+                <button>LEARN MORE</button>
+            </div>
+            <img src="image 1.png" alt="image 1">
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>Frequently asked question</h2>
+    </div>
+
+    <div class="lorem">
+        <p>Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?
+            <span id="toggleIcon" onclick="toggleLorem()">+</span>
+        </p>
+    </div>
+
+    <!-- The hidden long text -->
+    <div id="hiddenText" class="hidden-text">
+        <p>Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus
+            odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</p>
+    </div>
+
+    <script>
+        function toggleLorem() {
+            var hiddenText = document.getElementById("hiddenText");
+            var toggleIcon = document.getElementById("toggleIcon");
+
+            if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+                hiddenText.style.display = "block";
+                toggleIcon.innerHTML = "-";
+            } else {
+                hiddenText.style.display = "none";
+                toggleIcon.innerHTML = "+";
+            }
+        }
+    </script>
+
+    <div class="lorem1">
+        <p>Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?
+            <span id="toggleIcon1" onclick="toggleLorem1()">+</span>
+        </p>
+    </div>
+
+    <div id="hiddenText1" class="hidden-text">
+        <p>Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus
+            odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</p>
+    </div>
+
+    <script>
+        function toggleLorem1() {
+            var hiddenText = document.getElementById("hiddenText1");
+            var toggleIcon = document.getElementById("toggleIcon1");
+
+            if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+                hiddenText.style.display = "block";
+                toggleIcon.innerHTML = "-";
+            } else {
+                hiddenText.style.display = "none";
+                toggleIcon.innerHTML = "+";
+            }
+        }
+    </script>
+
+    <div class="lorem2">
+        <p>Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?
+            <span id="toggleIcon2" onclick="toggleLorem2()">+</span>
+        </p>
+    </div>
+
+    <div id="hiddenText2" class="hidden-text">
+        <p>Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus
+            odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</p>
+    </div>
+
+    <script>
+        function toggleLorem2() {
+            var hiddenText = document.getElementById("hiddenText2");
+            var toggleIcon = document.getElementById("toggleIcon2");
+
+            if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+                hiddenText.style.display = "block";
+                toggleIcon.innerHTML = "-";
+            } else {
+                hiddenText.style.display = "none";
+                toggleIcon.innerHTML = "+";
+            }
+        }
+    </script>
+
+    <div class="footer">
+        <div>
+            <img src="Logo.png" alt="Logo">
+            <p>Your goal is our target. Not anything in between. We use online marketing platforms and tools to achieve single objective - your business results.</p>
+        </div>
+        <div class="tech">
+            <h2>Our Technologies</h2> 
+            <ul>
+                <li>ReactJs</li>
+                <li>Gatby</li>
+                <li>NextJs</li>
+                <li>NodeJs</li>
+            </ul> 
+        </div>
+        <div class="serv">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Social Media Marketing</li>
+                <li>Web & Mobile App Development</li>
+                <li>Data & Analytics</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="pri-term">
+            <p>Privacy Policy <span class="separator">|</span> Terms & Conditions</p>
+        </div>        
+    </div>
+</body>
+
+</html>
