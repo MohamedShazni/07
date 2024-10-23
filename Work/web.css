@@ -1,3 +1,121 @@
+@media (min-width: 600px) and (max-width: 1024px) {
+
+   .top {
+      padding: 20px 40px;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .top ul {
+      display: block;
+      margin-top: 10px;
+   }
+
+   .top a {
+      margin-left: 0;
+      margin-right: 15px;
+   }
+
+   .hero-text {
+      top: 60%;
+      left: 50%;
+      width: 100%;
+      padding: 10px;
+      font-size: 36px;
+   }
+
+   p {
+      font-size: 36px;
+      line-height: 120%;
+   }
+
+   button {
+      width: 180px;
+      height: 40px;
+      font-size: 16px;
+      padding: 8px;
+   }
+
+   .one img,
+   .two img {
+      width: 260px;
+      height: 260px;
+      margin-left: 0;
+   }
+
+   .one-content,
+   .two-content {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .one-text,
+   .two-text {
+      margin-left: 20px;
+      width: 100%;
+   }
+
+   .question h2 {
+      font-size: 24px;
+      width: 100%;
+   }
+
+   .lorem p,
+   .lorem1 p,
+   .lorem2 p {
+      width: 90%;
+      margin-left: 20px;
+      font-size: 18px;
+      padding: 20px;
+   }
+
+   .hidden-text p {
+      width: 90%;
+      margin-left: 20px;
+      font-size: 16px;
+   }
+
+   #toggleIcon,
+   #toggleIcon1,
+   #toggleIcon2 {
+      margin-left: 20px;
+   }
+
+   .footer {
+      padding: 30px 40px;
+      height: auto;
+      display: block;
+   }
+
+   .footer p {
+      width: 100%;
+      font-size: 14px;
+   }
+
+   .footer h2 {
+      font-size: 18px;
+   }
+
+   .footer ul li {
+      font-size: 12px;
+   }
+
+   .tech,
+   .serv {
+      margin-left: 0;
+      margin-top: 20px;
+   }
+
+   hr {
+      width: 100%;
+      margin-left: 0;
+   }
+
+   .pri-term p {
+      margin-left: 20px;
+   }
+
+}
 .top {
    display: flex;
    flex-direction: row;
