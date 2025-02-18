@@ -37,48 +37,53 @@ const VitiscoLanding = () => {
     <div className="bg-gray-200">
       {/* Hero Section */}
       <header className="bg-gray-200 sticky top-0 z-50 shadow-lg py-1">
-        <div className=" px-4 lg:px-8 flex items-center ml-[400px] cursor-pointer">
-          <img
-            src="/Images/vitisco logo PNG.png"
-            alt="vitisco"
-            className="lg:w-20"
-          />
-          <div>
-            <h1 className="text-2xl font-bold text-[#B2B5E7]-200 mb-6 tracking-[10px] mt-[21px] italic">
+        <div className="px-4 lg:px-8 flex items-center justify-between cursor-pointer">
+          <div className="flex items-center gap-4">
+            <img
+              src="/Images/vitisco logo PNG.png"
+              alt="vitisco"
+              className="w-12 md:w-16 lg:w-20"
+            />
+            <h1 className="text-lg md:text-2xl font-bold text-[#B2B5E7]-100 tracking-wider italic">
               VITISCO
             </h1>
           </div>
-          <div>
-            <h1 className="text-sm font-bold text-gray-600 mb-6 ml-[560px]">
+          <div className="hidden md:flex items-center gap-x-16">
+            <h1 className="text-sm font-bold text-gray-600">
               SITE LANGUAGE: ENGLISH
             </h1>
           </div>
         </div>
       </header>
 
-      <section className="py-20 w-[1500px] mx-auto">
+      <section className="py-20 max-w-7xl mx-auto px-4">
         <div className="px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="transform hover:scale-105 transition-transform duration-300">
               <img
                 src="\Images\vitisco logo PNG.png"
                 alt="Community interaction"
-                className="rounded-2xl shadow-2xl w-[400px] mx-auto"
+                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
             </div>
             <div>
               <div className="bg-gradient-to-r from-purple-500 to-purple-600 h-1 w-24 mb-6"></div>
               <h2 className="text-4xl font-bold text-gray-800 mb-6">
-                <span className="text-purple-800">VITISCO!</span> The Best Platform To Learn <span className="text-purple-800">Sign Languages...</span>
+                <span className="text-purple-800">VITISCO!</span> The Best
+                Platform To Learn{" "}
+                <span className="text-purple-800">Sign Languages...</span>
               </h2>
               <p className="text-gray-600 mb-4 text-2xl">
                 The free, fun and effective way to learn a sign language
               </p>
               <p className="text-gray-600 mb-8 text-2xl">
-                With more and more interactive sessions and multiple tasks. <span className="text-purple-800 font-bold">Collect your badges and rewards Now Onwards!!</span>
+                With more and more interactive sessions and multiple tasks.{" "}
+                <span className="text-purple-800 font-bold">
+                  Collect your badges and rewards Now Onwards!!
+                </span>
               </p>
               <button className="bg-purple-800 text-white text-2xl px-[30px] py-[20px] rounded-lg hover:bg-purple-700 transition-all transform hover:scale-105">
-                Let's Begin! 
+                Let's Begin!
               </button>
             </div>
           </div>
@@ -86,7 +91,7 @@ const VitiscoLanding = () => {
       </section>
 
       {/* Alternating Sections */}
-      <section className="py-20 w-[1500px] mx-auto">
+      <section className="py-20 max-w-7xl mx-auto px-4">
         {/* First Section - Image Right */}
         <div className="w-full px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -96,8 +101,9 @@ const VitiscoLanding = () => {
                 Learn Sign Language Naturally
               </h2>
               <p className="text-gray-600 mb-4 text-[20px]">
-                <span className="text-purple-800 font-bold">VITISCO</span> revolutionizes sign language education through an
-                immersive visual learning experience. Our platform is designed
+                <span className="text-purple-800 font-bold">VITISCO</span>{" "}
+                revolutionizes sign language education through an immersive
+                visual learning experience. Our platform is designed
                 specifically for the deaf community, ensuring that every lesson
                 is presented in a clear, intuitive way that matches how you
                 naturally learn and communicate.
@@ -115,7 +121,7 @@ const VitiscoLanding = () => {
               <img
                 src="/Images/sgn.jpg"
                 alt="Student learning sign language"
-                className="rounded-2xl shadow-2xl w-[600px] m-auto"
+                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
             </div>
           </div>
@@ -150,7 +156,7 @@ const VitiscoLanding = () => {
               <img
                 src="/Images/community.jpeg"
                 alt="Community interaction"
-                className="rounded-2xl shadow-2xl w-[600px]"
+                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
             </div>
             <div>
@@ -160,9 +166,11 @@ const VitiscoLanding = () => {
               </h2>
               <p className="text-gray-600 mb-4 text-[20px]">
                 Learning a language is more than just lessons – it's about
-                connection. <span className="text-purple-800 font-bold">VITISCO</span> brings together a diverse community of
-                learners, native signers, and educators who share your passion
-                for sign language and deaf culture.
+                connection.{" "}
+                <span className="text-purple-800 font-bold">VITISCO</span>{" "}
+                brings together a diverse community of learners, native signers,
+                and educators who share your passion for sign language and deaf
+                culture.
               </p>
               <p className="text-gray-600 mb-8 text-[20px]">
                 Participate in group sessions, join discussion forums, and
@@ -222,7 +230,7 @@ const VitiscoLanding = () => {
               <img
                 src="/Images/dashboard.jpg"
                 alt="Progress tracking dashboard"
-                className="rounded-2xl shadow-2xl w-[600px] mx-auto"
+                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
             </div>
           </div>
@@ -256,7 +264,7 @@ const VitiscoLanding = () => {
               <img
                 src="/Images/vr.jpg"
                 alt="Progress tracking dashboard"
-                className="rounded-2xl shadow-2xl w-[600px] mx-auto"
+                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
             </div>
             <div>
@@ -276,7 +284,8 @@ const VitiscoLanding = () => {
                 fluency faster!
               </p>
               <p className="text-gray-600 mb-8 text-[20px]">
-                Many competitions One winner! Lets choose <span className="text-purple-800 font-bold">VITISCO...</span>
+                Many competitions One winner! Lets choose{" "}
+                <span className="text-purple-800 font-bold">VITISCO...</span>
               </p>
               <button className="bg-green-400 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-all transform hover:scale-105 shadow-lg">
                 View LeaderBoard
@@ -289,40 +298,52 @@ const VitiscoLanding = () => {
       <section className="bg-[#0E0D2A] py-[250px]">
         <div className="flex justify-center space-x-16 cursor-pointer">
           <div className="transform hover:scale-105 transition-transform duration-300">
-            <img 
-            src="\Images\vitisco logo PNG.png" 
-            alt="Pro" 
-            className="w-[600px] h-[500px]"
+            <img
+              src="\Images\vitisco logo PNG.png"
+              alt="Pro"
+              className="w-[600px] h-[500px]"
             />
           </div>
           <div className="text-center mt-[150px]">
-            <p className="text-white font-bold text-[30px] italic tracking-[10px]">POWER UP WITH</p>
-            <p className="text-white font-bold text-[70px] italic tracking-[10px]">VITISCO PRO</p><br />
-            <button className="bg-white px-[30px] py-[20px] tracking-[5px] font-bold italic hover:bg-gray-700 shadow-lg hover:text-white">PURCHASE</button>
+            <p className="text-white font-bold text-[30px] italic tracking-[10px]">
+              POWER UP WITH
+            </p>
+            <p className="text-white font-bold text-[70px] italic tracking-[10px]">
+              VITISCO PRO
+            </p>
+            <br />
+            <button className="bg-white px-[30px] py-[20px] tracking-[5px] font-bold italic hover:bg-gray-700 shadow-lg hover:text-white">
+              PURCHASE
+            </button>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-200 mt-12">
+      <section className="py-10 bg-gray-200 mt-12">
         <div className="px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
-            Why Want To Choose <span className="text-purple-800 tracking-[5px] italic">VITISCO</span>?
+          <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-8 md:mb-16">
+            Why Choose{" "}
+            <span className="text-purple-800 tracking-widest italic">
+              VITISCO
+            </span>
+            ?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className={`cursor-pointer border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 ${feature.bgColor}`}
+                className={`border-none shadow-lg hover:shadow-xl transition-all duration-300 
+                                       transform hover:-translate-y-1 ${feature.bgColor}`}
               >
                 <CardHeader>
                   <div className="flex justify-center mb-4">{feature.icon}</div>
-                  <CardTitle className="text-center text-xl font-semibold text-gray-800">
+                  <CardTitle className="text-center text-lg md:text-xl font-semibold text-gray-800">
                     {feature.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-center text-gray-600">
+                  <p className="text-center text-gray-600 text-sm md:text-base">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -353,35 +374,55 @@ const VitiscoLanding = () => {
           </p>
           <div className="flex justify-center space-x-16 cursor-pointer">
             <div>
-              <p className="text-2xl font-bold">Developers</p><br />
-              <p className="text-[18px] text-gray-300 mb-3">Suresh Thaheshan</p>
-              <p className="text-[18px] text-gray-300 mb-3">Zuhar Ahamed</p>
-              <p className="text-[18px] text-gray-300 mb-3">Ayman Jaleel</p>
-              <p className="text-[18px] text-gray-300 mb-3">Mohamed Shazni</p>
-              <p className="text-[18px] text-gray-300 mb-3">Rifaideen Shilma</p>
-              <p className="text-[18px] text-gray-300">Muaaza Mazeer</p>
+              <p className="text-2xl font-bold">Developers</p>
+              <br />
+              <p className="text-[18px] text-gray-300 mb-3 hover:text-white">
+                Suresh Thaheshan
+              </p>
+              <p className="text-[18px] text-gray-300 mb-3 hover:text-white">
+                Zuhar Ahamed
+              </p>
+              <p className="text-[18px] text-gray-300 mb-3 hover:text-white">
+                Ayman Jaleel
+              </p>
+              <p className="text-[18px] text-gray-300 mb-3 hover:text-white">
+                Mohamed Shazni
+              </p>
+              <p className="text-[18px] text-gray-300 mb-3 hover:text-white">
+                Rifaideen Shilma
+              </p>
+              <p className="text-[18px] text-gray-300 hover:text-white">
+                Muaaza Mazeer
+              </p>
             </div>
             <div>
-              <p className="text-2xl font-bold">Apps</p><br />
-              <p className="text-[18px] text-gray-300 mb-3">VITISCO for Android</p>
+              <p className="text-2xl font-bold">Apps</p>
+              <br />
+              <p className="text-[18px] text-gray-300 mb-3">
+                VITISCO for Android
+              </p>
               <p className="text-[18px] text-gray-300">VITISCO for iOS</p>
             </div>
             <div>
-              <p className="text-2xl font-bold">Help & Supports</p><br />
+              <p className="text-2xl font-bold">Help & Supports</p>
+              <br />
               <p className="text-[18px] text-gray-300">VITISCO FAQs</p>
             </div>
             <div>
-              <p className="text-2xl font-bold">Privacy & Terms</p><br />
+              <p className="text-2xl font-bold">Privacy & Terms</p>
+              <br />
               <p className="text-[18px] text-gray-300 mb-3">Privacy</p>
               <p className="text-[18px] text-gray-300">Terms</p>
             </div>
             <div>
-              <p className="text-2xl font-bold">Products</p><br />
+              <p className="text-2xl font-bold">Products</p>
+              <br />
               <p className="text-[18px] text-gray-300 mb-3">VITISCO</p>
               <p className="text-[18px] text-gray-300">VITISCO PRO</p>
             </div>
             <div>
-              <p className="text-2xl font-bold">Social</p><br />
+              <p className="text-2xl font-bold">Social</p>
+              <br />
               <p className="text-[18px] text-gray-300 mb-3">Instagram</p>
               <p className="text-[18px] text-gray-300 mb-3">Facebook</p>
               <p className="text-[18px] text-gray-300">LinkedIn</p>
