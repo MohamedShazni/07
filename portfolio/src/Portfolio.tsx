@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import {
-  ChevronDown,
   Mail,
   Phone,
   Github,
@@ -13,6 +12,7 @@ import {
   BaggageClaim,
   Footprints,
   MoveIcon,
+  Download,
 } from "lucide-react";
 
 interface Skill {
@@ -72,25 +72,28 @@ const Portfolio: React.FC = () => {
   };
 
   const skills: Skill[] = [
-    { name: "React", level: 95, color: "from-blue-500 to-cyan-500" },
+    { name: "React.js", level: 95, color: "from-blue-500 to-cyan-500" },
     { name: "JavaScript", level: 90, color: "from-yellow-500 to-orange-500" },
     { name: "TypeScript", level: 85, color: "from-blue-600 to-purple-600" },
     { name: "Node.js", level: 80, color: "from-green-500 to-emerald-500" },
     { name: "Python", level: 75, color: "from-indigo-500 to-purple-500" },
     { name: "MySQL", level: 85, color: "from-pink-500 to-rose-500" },
+    { name: "PHP", level: 90, color: "from-green-500 to-emerald-500" },
   ];
 
   const projects: Project[] = [
     {
       title: "VITISCO Learning Platform",
-      description: "Full-stack learning platform for deaf individuals with React, Node.js, and MySQL",
+      description:
+        "Full-stack learning platform for deaf individuals with React, Node.js, and MySQL",
       tags: ["React", "Node.js", "MySQL"],
       gradient: "from-purple-600 via-pink-600 to-red-500",
       icon: <Code className="w-8 h-8" />,
     },
     {
       title: "S7 Futsal Booking System",
-      description: "Real-time booking system for futsal courts with React and Tailwind CSS",
+      description:
+        "Real-time booking system for futsal courts with React and Tailwind CSS",
       tags: ["React", "Tailwind CSS"],
       gradient: "from-blue-600 via-cyan-600 to-teal-500",
       icon: <Footprints className="w-8 h-8" />,
@@ -104,7 +107,8 @@ const Portfolio: React.FC = () => {
     },
     {
       title: "Movie Explorer App",
-      description: "Real-time application for accessing movie information using React and The Movie Database API",
+      description:
+        "Real-time application for accessing movie information using React and The Movie Database API",
       tags: ["React", "TypeScript", "Material UI"],
       gradient: "from-indigo-600 via-purple-600 to-pink-500",
       icon: <MoveIcon className="w-8 h-8" />,
@@ -117,9 +121,10 @@ const Portfolio: React.FC = () => {
       role: "Pharmacy Assistant",
       company: "Zaidah Pharmacy.",
       period: "2023 - Present",
-      description: "Supports pharmacists in dispensing medications, managing inventory, and providing customer service",
-      color: "from-emerald-500 to-teal-500"
-    }
+      description:
+        "Supports pharmacists in dispensing medications, managing inventory, and providing customer service",
+      color: "from-emerald-500 to-teal-500",
+    },
   ];
 
   return (
@@ -158,7 +163,7 @@ const Portfolio: React.FC = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center relative overflow-hidden"
+        className="min-h-screen flex items-center justify-center relative overflow-hidden mt-12"
       >
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -183,12 +188,18 @@ const Portfolio: React.FC = () => {
 
           <h1 className="text-6xl md:text-8xl font-bold mb-6">
             <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              Hi, I am
+            </span>
+          </h1>
+
+          <h1 className="text-6xl md:text-8xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               Shazni Mohamed
             </span>
           </h1>
 
           <p className="text-2xl md:text-3xl mb-8 text-gray-300">
-            Intern Software Engineer & ML Enthusiast
+            Intern Software Engineer | ML Enthusiast
           </p>
 
           <p className="text-lg md:text-xl mb-12 text-gray-400 max-w-2xl mx-auto">
@@ -211,10 +222,17 @@ const Portfolio: React.FC = () => {
               Get In Touch
             </button>
           </div>
-        </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="w-8 h-8 text-gray-400" />
+          <div className="mt-12">
+            <a
+              href="/Shazni_Software Engineer_Intern_CV.pdf"
+              download
+              className="inline-flex items-center px-6 py-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105"
+            >
+              Download My Resume
+              <Download className="ml-2 w-5 h-5" />
+            </a>
+          </div>
         </div>
       </section>
 
